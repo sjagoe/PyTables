@@ -9,11 +9,11 @@
 ########################################################################
 
 
-import sys, os
-if os.name == 'nt':
-    module_path = os.path.abspath(os.path.dirname(__file__))
-    os.environ['PATH'] = ';'.join((os.environ['PATH'], module_path))
-    sys.path.append(module_path)
+import os
+# if os.name == 'nt':
+#     module_path = os.path.abspath(os.path.dirname(__file__))
+#     os.environ['PATH'] = ';'.join((os.environ['PATH'], module_path))
+#     sys.path.append(module_path)
 
 # In order to improve diagnosis of a common Windows dependency
 # issue, we explicitly test that we can load the HDF5 dll before
